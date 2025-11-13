@@ -1,0 +1,146 @@
+const carsData = {
+  new: [
+    {
+      id: 1,
+      name: "BMW X1",
+      image:"/images/cars/new/bmw x2.webp",
+      mileage: "0 miles",
+      price: "$110,000",
+      estimate: "Est. EMI: $1,350/mo",
+      shipping: "Premium delivery",
+    },
+    {
+      id: 2,
+      name: "BMW X2",
+      image: "/images/cars/new/bmw-x2.png",
+      mileage: "0 miles",
+      price: "$45,000",
+      estimate: "Est. EMI: $650/mo",
+      shipping: "Free home delivery",
+    },
+    {
+      id: 3,
+      name: "BMW X3",
+      image: "/images/cars/new/bmw-x3.webp",
+      mileage: "0 miles",
+      price: "$59,000",
+      estimate: "Est. EMI: $810/mo",
+      shipping: "Home delivery",
+    },
+
+     {
+      id: 4,
+      name: "BMW X7",
+      image: "/images/cars/new/bmw-x7.webp",
+      mileage: "0 miles",
+      price: "$110,000",
+      estimate: "Est. EMI: $1,350/mo",
+      shipping: "Premium delivery",
+    },
+    {
+      id: 5,
+      name: "Benz",
+      image: "https://images.unsplash.com/photo-1580679568899-be51739ba2df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVuenxlbnwwfHwwfHx8MA%3D%3D",
+      mileage: "0 miles",
+      price: "$45,000",
+      estimate: "Est. EMI: $650/mo",
+      shipping: "Free home delivery",
+    },
+    {
+      id: 6,
+      name: "Camero",
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D/blue-chevrolet-coupe-2AovfzYV3rc",
+      mileage: "0 miles",
+      price: "$59,000",
+      estimate: "Est. EMI: $810/mo",
+      shipping: "Home delivery",
+    },
+     {
+      id: 7,
+      name: "Audi",
+      image: "https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNhcnN8ZW58MHx8MHx8fDA%3D",
+      mileage: "0 miles",
+      price: "$59,000",
+      estimate: "Est. EMI: $810/mo",
+      shipping: "Home delivery",
+    },
+     {
+      id: 8,
+      name: "Ford",
+      image:"https://images.unsplash.com/photo-1592853625601-bb9d23da12fc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxjYXJzfGVufDB8fDB8fHww",
+      mileage: "0 miles",
+      price: "$59,000",
+      estimate: "Est. EMI: $810/mo",
+      shipping: "Home delivery",
+    },
+  ],
+
+  used: [
+    {
+      id: 101,
+      name: "Camry",
+      image: "/images/cars/used/camry.jpg",
+      mileage: "22,000 miles",
+      price: "$32,000",
+      estimate: "Est. EMI: $420/mo",
+      shipping: "Pickup available",
+    },
+    {
+      id: 102,
+      name: "Audi Q7 (2020)",
+      image:
+       "https://images.unsplash.com/photo-1612825173281-9a193378527e?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      mileage: "35,000 miles",
+      price: "$38,000",
+      estimate: "Est. EMI: $500/mo",
+      shipping: "Nationwide delivery",
+    },
+    {
+      id: 103,
+      name: "Range Rover Evoque (2019)",
+      image:
+       " https://images.unsplash.com/photo-1658547737133-18ff87807de7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZ2UlMjByb3ZlciUyMGV2b3F1ZXxlbnwwfHwwfHx8MA%3D%3D",
+      mileage: "45,000 miles",
+      price: "$41,000",
+      estimate: "Est. EMI: $550/mo",
+      shipping: "Delivery available",
+    },
+  ],
+
+  luxury: [
+    {
+      id: 201,
+      name: "Lamborghini Huracán",
+      image:
+        "https://images.unsplash.com/photo-1707399720709-cd14e30d5e3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFtYm9yZ2hpbmklMjBodXJhY2FufGVufDB8fDB8fHww",
+      mileage: "0 miles",
+      price: "$210,000",
+      estimate: "Est. EMI: $2,600/mo",
+      shipping: "VIP delivery",
+    },
+    {
+      id: 202,
+      name: "Ferrari 488 GTB",
+      image:
+        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmFyaXxlbnwwfHwwfHx8MA%3D%3D",
+      mileage: "0 miles",
+      price: "$280,000",
+      estimate: "Est. EMI: $3,400/mo",
+      shipping: "Free worldwide delivery",
+    },
+    {
+      id: 203,
+      name: "Rolls Royce Phantom",
+      image:
+        "https://images.unsplash.com/photo-1631295868223-63265b40d9e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9sbHMlMjByb3ljZSUyMHBoYW50b218ZW58MHx8MHx8fDA%3D",
+      mileage: "0 miles",
+      price: "$500,000",
+      estimate: "Est. EMI: $6,200/mo",
+      shipping: "Chauffeur delivery",
+    },
+  ],
+};
+
+export default carsData;
+
+
