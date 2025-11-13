@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardMedia, CardContent, Typography, Box } from "@mui/material";
+import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 
 export default function CarCard({ image, name, mileage, price, estimate, shipping }) {
   return (
