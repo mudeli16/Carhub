@@ -1,36 +1,40 @@
-/* Header.css */
-
+/* Header container */
 .header {
   background-color: #282c34;
-  padding: 2rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
 }
 
+/* Logo/title */
 .title {
   margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+/* Navigation bar */
 .nav {
   display: flex;
   align-items: center;
-  gap: 2 rem;
+  gap: 2rem;
 }
 
 .link {
   color: white;
   text-decoration: none;
-  font-size: 1 rem;
+  font-size: 1rem;
 }
 
-/* Dropdown */
+/* Dropdown wrapper */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Dropdown button */
 .dropbtn {
   background-color: #282c34;
   color: white;
@@ -39,20 +43,20 @@
   font-size: 1rem;
 }
 
-/* Hidden menu */
+/* Dropdown hidden menu */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #333;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 10;
 }
 
-/* Dropdown links */
+/* Dropdown items */
 .dropdown-content a {
   color: white;
-  padding: 12px 16px;
+  padding: 10px 14px;
   text-decoration: none;
   display: block;
 }
@@ -64,4 +68,29 @@
 /* Show menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* --------------------------------------------------- */
+/* 📱 MOBILE RESPONSIVENESS */
+/* --------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .link, 
+  .dropbtn {
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
 }
